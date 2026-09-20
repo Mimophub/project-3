@@ -1,0 +1,270 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --pink: #ff5270;
+  --pink-soft: #ffe1e8;
+  --pink-bg: #fff2f5;
+  --text: #554b50;
+  --muted: #968a90;
+}
+
+body {
+  margin: 0;
+  background: #ffe9ef;
+  color: var(--text);
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+.page {
+  min-height: 100vh;
+  padding: 25px 12px 55px;
+  background:
+    radial-gradient(circle at 8% 25%, #ffffffaa 0 2px, transparent 3px),
+    radial-gradient(circle at 90% 65%, #ff9db522 0 3px, transparent 4px),
+    #ffe9ef;
+}
+
+.container {
+  width: min(600px, 100%);
+  margin: auto;
+  background: rgba(255, 255, 255, 0.72);
+  border-radius: 32px;
+  padding: 28px 24px 40px;
+  box-shadow: 0 15px 45px rgba(221, 102, 129, 0.13);
+}
+
+/* Header */
+.intro {
+  text-align: center;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.intro h1 {
+  display: inline-block;
+  margin: 0;
+  padding: 12px 25px;
+  background: white;
+  border-radius: 28px;
+  color: var(--pink);
+  font-family: "Patrick Hand", cursive;
+  font-size: clamp(32px, 7vw, 44px);
+  line-height: 1.08;
+  box-shadow: 0 8px 22px rgba(255, 82, 112, 0.08);
+}
+
+.intro p {
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-family: "Patrick Hand", cursive;
+  font-size: 19px;
+}
+
+.sparkle {
+  position: absolute;
+  left: 8%;
+  top: 0;
+  font-size: 23px;
+}
+
+/* PHẦN ẢNH COLLAGE NGHỆ THUẬT */
+.photos-collage {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 110px;
+  gap: 12px;
+  background: #faf2f4;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.collage-item {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  background: #fff;
+  transition: transform 0.3s ease;
+}
+
+.collage-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.collage-item:hover {
+  transform: scale(1.03);
+  z-index: 10;
+}
+
+/* Định vị các ô ảnh tạo kiểu ngẫu hứng giống mẫu */
+.item-1 {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.item-2 {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.item-3 {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.item-4 {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.item-5 {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.item-6 {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+/* Music */
+.music-card {
+  margin-top: 18px;
+  padding: 18px;
+  background: white;
+  border-radius: 22px;
+  display: grid;
+  grid-template-columns: 58px 1fr;
+  gap: 15px;
+  align-items: center;
+  box-shadow: 0 9px 25px rgba(221, 102, 129, 0.1);
+}
+
+.play {
+  width: 55px;
+  height: 55px;
+  border: none;
+  border-radius: 50%;
+  background: var(--pink);
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.song {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.artist {
+  color: var(--muted);
+  font-size: 12px;
+  margin-top: 3px;
+}
+
+.progress {
+  height: 5px;
+  margin-top: 12px;
+  background: #f3dce2;
+  border-radius: 99px;
+  cursor: pointer;
+}
+
+.bar {
+  width: 0;
+  height: 100%;
+  background: var(--pink);
+  border-radius: 99px;
+}
+
+.times {
+  display: flex;
+  justify-content: space-between;
+  color: #ad989f;
+  font-size: 10px;
+  margin-top: 3px;
+}
+
+/* Lời chúc */
+.letter {
+  position: relative;
+  margin-top: 18px;
+  padding: 30px 25px;
+  background: #fffafc;
+  border-radius: 24px;
+  box-shadow: 0 9px 25px rgba(221, 102, 129, 0.08);
+  overflow: hidden;
+}
+
+.letter h2 {
+  margin: 0 0 17px;
+  color: #df5d78;
+  font-family: "Patrick Hand", cursive;
+  font-size: 29px;
+}
+
+.letter p {
+  margin: 10px 0;
+  font-family: "Patrick Hand", cursive;
+  font-size: 19px;
+  line-height: 1.55;
+}
+
+.letter .wish {
+  color: var(--pink);
+  font-size: 21px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.flower {
+  position: absolute;
+  right: 18px;
+  top: 17px;
+  font-size: 25px;
+}
+
+.signature {
+  margin-top: 18px;
+  color: #9d7e86;
+  font-family: "Patrick Hand", cursive;
+  font-size: 17px;
+  text-align: right;
+}
+
+footer {
+  padding-top: 27px;
+  text-align: center;
+  color: #df7188;
+  font-family: "Patrick Hand", cursive;
+  font-size: 18px;
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 22px 14px 32px;
+    border-radius: 26px;
+  }
+
+  .photos {
+    grid-template-columns: 1.25fr 0.8fr;
+    grid-auto-rows: 120px;
+  }
+
+  .photo.big {
+    grid-row: span 2;
+  }
+
+  .intro h1 {
+    font-size: 32px;
+  }
+
+  .letter {
+    padding: 27px 19px;
+  }
+}

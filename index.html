@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kỷ niệm tình bạn ♡</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Patrick+Hand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="page">
+      <main class="container">
+        <!-- LỜI MỞ ĐẦU -->
+        <header class="intro">
+          <div class="sparkle">✨</div>
+          <h1>Trạm kỷ niệm<br />để nhớ chúng ta nhé! ♡</h1>
+          <p>Một góc nhỏ dành cho những kỷ niệm của chúng mình</p>
+        </header>
+
+        <!-- ẢNH KỶ NIỆM KIỂU COLLAGE NGHỆ THUẬT -->
+        <section class="photos-collage">
+          <div class="collage-item item-1">
+            <img src="./assets/ảnh 1.jpg" alt="Kỷ niệm 1" />
+          </div>
+          <div class="collage-item item-2">
+            <img src="./assets/ảnh 2.jpg" alt="Kỷ niệm 2" />
+          </div>
+          <div class="collage-item item-3">
+            <img src="./assets/ảnh 3.jpg" alt="Kỷ niệm 3" />
+          </div>
+          <div class="collage-item item-4">
+            <img src="./assets/ảnh 4.jpg" alt="Kỷ niệm 4" />
+          </div>
+          <div class="collage-item item-5">
+            <img src="./assets/ảnh 5.jpg" alt="Kỷ niệm 5" />
+          </div>
+          <div class="collage-item item-6">
+            <img src="./assets/ảnh 6.jpg" alt="Kỷ niệm 6" />
+          </div>
+        </section>
+
+        <!-- NHẠC -->
+        <section class="music-card">
+          <button class="play" id="playBtn">▶</button>
+
+          <div class="music-info">
+            <div class="song">Bài hát của chúng ta ♡</div>
+            <div class="artist">Một chút âm nhạc cho những ngày nhớ nhau</div>
+
+            <div class="progress" id="progress">
+              <div class="bar" id="bar"></div>
+            </div>
+
+            <div class="times">
+              <span id="current">0:00</span>
+              <span id="duration">0:00</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- ĐẶT FILE NHẠC TÊN music.mp3 CẠNH index.html -->
+        <audio
+          id="audio"
+          src="./assets/Y2Mate.is - marzuz - cm n_ official audio.mp3"
+          preload="metadata"
+        ></audio>
+
+        <!-- LỜI CHÚC -->
+        <section class="letter">
+          <div class="flower">🌷</div>
+
+          <h2>Gửi những người bạn của mình... ♡</h2>
+
+          <p>
+            Cảm ơn vì chúng ta đã gặp nhau,<br />
+            đã cùng nhau có thật nhiều câu chuyện,<br />
+            những tiếng cười và cả những ngày chẳng thể nào quên.
+          </p>
+
+          <p>
+            Mong rằng sau này, dù mỗi người có một hành trình riêng,<br />
+            chúng ta vẫn sẽ nhớ về những ngày tháng này<br />
+            bằng một nụ cười thật đẹp.
+          </p>
+
+          <p class="wish">
+            Chúc tình bạn của chúng ta<br />
+            luôn thật lâu, thật vui và thật đáng nhớ. 💗
+          </p>
+
+          <div class="signature">— Thương những người bạn của mình —</div>
+        </section>
+
+        <footer>
+          ✨ Cảm ơn vì đã là một phần trong thanh xuân của nhau ♡ ✨
+        </footer>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
